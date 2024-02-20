@@ -1,0 +1,23 @@
+* {
+    body {
+        margin: 0%;
+        padding: 0;
+    }
+}
+.header {
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #11be6a;
+        height: 11vh;
+        color: #ffff;
+        font-size: 2rem;
+        font-family: sans-serif;
+        font-weight: 700;
+        text-shadow: 4px 3px 6px #111010;
+        margin: 0%;
+        background-image: linear-gradient(to bottom, #11be6a, #11ceceee);
+    }
+}
