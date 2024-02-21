@@ -1,0 +1,43 @@
+
+.timer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color:  #11ceceee;
+    justify-content: center;
+    align-items: center;
+
+
+    &__container {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: rgb(246, 251, 249);
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+
+        .circle {
+            height: 100%;
+            width: 100%;
+            background-color:#f3fafaee;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+
+        .circle--1 {
+            height: 250px;
+            width: 250px;
+            background-color:#2b9595ee;
+            position: absolute;
+            border-radius: 50%;
+            top: 8%;
+            left: 8%;
+        }
+        
+
+
+    
+    }}
