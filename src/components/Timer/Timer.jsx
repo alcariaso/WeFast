@@ -49,6 +49,10 @@ const Timer = () => {
                 <div className="progressIndicator__circle--outermost"></div>
             </div>
 
+            <div>
+                <button className="button">BStart</button>
+            </div>
+
        </div>
     )
 }
