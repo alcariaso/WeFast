@@ -12,11 +12,15 @@ const HomeHub = () => {
     return (
 
        <nav className="homeNav">
-            <img className="nav" src={iconHome}></img>
-            <img className="nav" src={iconActivity}></img>
-            <img className="nav" src={iconFood}></img>
-            <img className="nav" src={iconCommunity}></img>
-            <img className="nav" src={iconProfile}></img>
+
+            <div className="homeNav__container">
+                
+                <img className="nav" src={iconHome}></img>
+                <img className="nav" src={iconActivity}></img>
+                <img className="nav" src={iconFood}></img>
+                <img className="nav" src={iconCommunity}></img>
+                <img className="nav" src={iconProfile}></img>   
+            </div>
             
        </nav>
     )
