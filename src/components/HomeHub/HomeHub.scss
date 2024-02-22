@@ -2,6 +2,7 @@
 .homeNav {
     position: fixed;
     bottom: 0;
+    background-color: rgb(219, 222, 224);
 
     // background-image: linear-gradient(to top, #11be6a, #11ceceee);
     box-shadow: 3px 0px 10px black;
@@ -10,7 +11,7 @@
 
     &__container {
        
-        height: 6vh;
+        height: 7vh;
         width: 96vw;
         padding: 1rem;
         display: flex;
@@ -18,6 +19,8 @@
 
         .nav {
          height: 5vh;
+         box-shadow: 3px 0px 10px white;
+     
         }
 
     }
