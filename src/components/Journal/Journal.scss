@@ -1,0 +1,86 @@
+
+
+.journal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: start;
+    background-color: #d9dedd;
+
+    
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: sans-serif;
+        text-shadow: 3px 4px 10px #545252;
+        width: 100vw;
+        text-align: center;
+        color: #5b6060;
+    }
+
+    .taskbox{
+        display: flex;
+        align-items: center;
+        
+
+        .checkbox-container {
+            margin: .5rem;
+        }
+        
+        .checkbox-container input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+         
+            width: 25px; 
+            height: 25px; 
+            border-radius: 50%;
+            border: 2px solid #999d9c;
+            outline: none;
+        }
+        
+        .checkbox-container input[type="checkbox"]:checked {
+            background-color: #249216;
+            border: #249216;
+          
+            
+        }
+        
+    }
+
+
+    .task {
+        display: flex;
+        align-items: center;
+        background-color: rgb(176, 193, 189);
+        box-shadow: 3px 0px 10px rgb(45, 44, 44);
+        border-radius: 10px;
+        height: 9vh;
+        width: 78vw;
+        margin-top: 1rem;
+        padding: .5rem;
+       
+
+        &__image {
+            background-color: rgb(119, 141, 142);
+            border-radius: 10px;
+            height: 55px;
+        }
+
+        &__container {
+            
+            margin-left: 1rem;
+
+            .title{
+                text-shadow: 1px 0px 3px #2e2c2c;
+                color:#363737;
+                font-size: 20px;
+            }
+
+            .text {
+
+            }
+
+
+        }
+    }
+}
