@@ -8,7 +8,7 @@ const Nutrition = () => {
 
         <div className="nutrition__background"></div>
 
-        <h1 className="nutrition__title">Let's Keep it Healthy</h1>
+        <h1 className="nutrition__title">Let's Keep it Healthy!</h1>
 
         <div className="button">
             <button className="button__food">F O O D</button>

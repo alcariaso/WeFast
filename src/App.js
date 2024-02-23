@@ -6,7 +6,7 @@ import Nutrition from './components/Nutrition/Nutrition'
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+
       <Nutrition></Nutrition>
       <HomeHub></HomeHub>
     </div>
