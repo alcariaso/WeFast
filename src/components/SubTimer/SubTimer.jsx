@@ -1,6 +1,7 @@
 import React from "react";
 import '../SubTimer/SubTimer.scss';
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import CircleProgress from "../CircleProgress/CircleProgress";
 
 import { useState, useEffect} from "react";
 
@@ -123,30 +124,42 @@ const TimerMain = () => {
 
     return (
         <div className="countdown-timer">
+
+
+
+            <div className="timer">
+                {/* <CircleProgress percentage={percentage} /> */}
+                <CountdownCircleTimer
+                  isPlaying={isRunning}
+                  duration={(hours * 3600) + (minutes * 60) + seconds}
+                  // colors={[
+                  //     ['#fefefe', 0.33],
+                  //     ['#F7B801', 0.33],
+                  //     ['#A30000', 0.34],
+                  // ]}
+  
+                  colors="#A30000"
+                  onComplete={handleComplete}
+                  className="timer"
+              >
+                  {renderTime}
+                </CountdownCircleTimer>
+
+
+            </div>
+
+            
             <div className="input-container">
                 <input type="number" value={hours} onChange={(e) => setHours(parseInt(e.target.value))} />
                 <span>hours</span>
                 <input type="number" value={minutes} onChange={(e) => setMinutes(parseInt(e.target.value))} />
                 <span>minutes</span>
-                <input type="number" value={seconds} onChange={(e) => setSeconds(parseInt(e.target.value))} />
-                <span>seconds</span>
+ 
             </div>
             <div className="controls">
                 <button onClick={handleStartStop}>{isRunning ? 'Pause' : 'Start'}</button>
                 <button onClick={handleReset}>Reset</button>
             </div>
-            <CountdownCircleTimer
-                isPlaying={isRunning}
-                duration={(hours * 3600) + (minutes * 60) + seconds}
-                colors={[
-                    ['#fefefe', 0.5],
-                    ['#F7B801', 0.5],
-                    ['#A30000', 1],
-                ]}
-                onComplete={handleComplete}
-            >
-                {renderTime}
-            </CountdownCircleTimer>
         </div>
     );
 };

@@ -1,43 +1,38 @@
+.countdown-timer {
 
-.timer {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    background-color:  #11ceceee;
-    justify-content: center;
-    align-items: center;
-
-
-    &__container {
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
-        background-color: rgb(246, 251, 249);
-        overflow: hidden;
-        position: absolute;
+    .timer {
+        position: relative;
         display: flex;
-
-        .circle {
-            height: 100%;
-            width: 100%;
-            background-color:#f3fafaee;
-            position: absolute;
-            top: 0;
-            left: 0;
-            
-        }
-
-        .circle--1 {
-            height: 250px;
-            width: 250px;
-            background-color:#2b9595ee;
-            position: absolute;
-            border-radius: 50%;
-            top: 8%;
-            left: 8%;
-        }
-        
-
-
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        height: 300px;
+        margin: 0 auto;
+        font-size: 50px;
     
-    }}
+    svg {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+    
+    }
+    
+      }
+}
+
+// .input-container {
+
+//     background-color: antiquewhite;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//   }
+
+//   .controls {
+  
+//     background-color: aquamarine;
+//   }
