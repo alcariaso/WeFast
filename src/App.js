@@ -1,15 +1,16 @@
-import Header from '../src/components/Header/Header'
-import Timer from '../src/components/Timer/Timer'
 import './App.css';
+import HomeHub from './components/HomeHub/HomeHub';
+import Journal from './components/Journal/Journal';
 
 
 
 function App() {
   return (
     <div className="App">
-
-      <Timer></Timer>
-   
+      
+     
+      <HomeHub></HomeHub>
+      
     </div>
   );
 }

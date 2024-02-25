@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+.countdown-timer {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+
+
+    .timer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        height: 300px;
+        margin: 0 auto;
+        font-size: 50px;
+    
+    svg {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+    
+    }
+    
+      }
+}
+
+.input-container {
+
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+
+
+
+    .input__title {
+        font-weight: 600;
+        margin: 1rem;
+    }
+
+    .input__time {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+  }
+
+  .controls {
+    text-align: center;
+
+
+    .button {
+        margin: 1rem;
+    }
+  }
