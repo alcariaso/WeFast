@@ -22,7 +22,7 @@ function App() {
           </Routes>
       </BrowserRouter>
     
-      <HomeHub></HomeHub>
+      {/* <HomeHub></HomeHub> */}
       
     </div>
   );

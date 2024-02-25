@@ -2,6 +2,7 @@ import React from "react";
 import '../Timer/Timer.scss';
 import TimerMain from "../TimerMain/TimerMain";
 import { useState, useEffect ,useRef} from "react";
+import HomeHub from "../HomeHub/HomeHub";
 
 
 const Timer = () => {
@@ -104,6 +105,7 @@ const Timer = () => {
 
           <button className="button">Start</button>
         </div>
+        <HomeHub></HomeHub>
       </div>
     );
   };

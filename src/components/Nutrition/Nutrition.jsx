@@ -1,5 +1,6 @@
 import React from "react";
 import '../Nutrition/Nutrition.scss';
+import HomeHub from "../HomeHub/HomeHub";
 
 const Nutrition = () => {
 
@@ -14,6 +15,7 @@ const Nutrition = () => {
             <button className="button__food">F O O D</button>
             <button className="button__drinks">D R I N K S</button>
         </div>
+        <HomeHub></HomeHub>
 
      </main>
     )

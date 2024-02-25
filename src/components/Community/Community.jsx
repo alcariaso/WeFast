@@ -7,6 +7,7 @@ import { useState } from "react";
 import profileImg from '../../assets/images/priyanka-chopra.jpg';
 import sucessGif from '../../assets/images/firework.gif';
 import weighttGif from '../../assets/images/weight-scale.gif'
+import HomeHub from "../HomeHub/HomeHub";
 
 const Community = () => {
     const [active, setActive] = useState(false)
@@ -95,7 +96,7 @@ const Community = () => {
                 </div>
 
             </div>
-
+            <HomeHub></HomeHub>
         </main>
    )
 }

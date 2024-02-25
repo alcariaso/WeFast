@@ -8,6 +8,7 @@ import iconMed from '../../assets/icons/icon-med.png';
 import { useState } from 'react';
 import MoodSelector from '../Journal/MoodSelector/MoodSelector';
 import { Link } from "react-router-dom";
+import HomeHub from "../HomeHub/HomeHub";
 
 
 const Journal = () => {
@@ -112,7 +113,7 @@ const Journal = () => {
             </div>
 
 
-            
+            <HomeHub></HomeHub>
         </main>
 
     )
