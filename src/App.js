@@ -1,4 +1,4 @@
-import Header from '../src/components/Header/Header'
+
 import './App.css';
 import HomeHub from './components/HomeHub/HomeHub';
 import Journal from './components/Journal/Journal';
@@ -9,6 +9,7 @@ function App() {
       {/* <Header></Header> */}
       <Journal></Journal>
       <HomeHub></HomeHub>
+      
     </div>
   );
 }
