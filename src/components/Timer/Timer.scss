@@ -1,6 +1,10 @@
-* {
-    box-sizing: border-box;
-}
+
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
+
+
 
 .countdown-timer {
     display: flex;
