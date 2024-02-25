@@ -35,7 +35,7 @@ const NutritionFood = () => {
 
             </section>
 
-            <section className="food__list">
+            {/* <section className="food__list">
                 <div className="container">
                     <img className="item__img" src={item5}></img>
                     <Heart
@@ -45,31 +45,7 @@ const NutritionFood = () => {
                         onClick={() => setActive(!active)}
                     />
                 </div>
-
-                <div className="container">
-                    <img className="item__img" src={item5}></img>
-                    <Heart
-                        width={24}
-                        height={24}
-                        active={active}
-                        onClick={() => setActive(!active)}
-                    />
-                </div>
-
-                
-                <div className="container">
-                    <img className="item__img" src={item5}></img>
-                    <Heart
-                        width={24}
-                        height={24}
-                        active={active}
-                        onClick={() => setActive(!active)}
-                    />
-                </div>
-
-
-
-            </section>
+            </section> */}
 
 
 

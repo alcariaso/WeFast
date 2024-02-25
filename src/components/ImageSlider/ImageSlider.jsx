@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useLayoutEffect} from 'react';
 import '../ImageSlider/ImageSlider.scss';
 import image1 from '../../assets/foodImages/food-item-1.jpg';
 import image2 from '../../assets/foodImages/food-item-2.jpg';
@@ -18,9 +18,12 @@ const ImageSlider = () => {
     { image: image4 },
     { image: image5 },
   ];
+  
+  const handleWheel = (e) => {
+    e.stopPropagation();
+  };
 
-
-  useEffect(() => {
+  useLayoutEffect(() => {
     const slideWidth = sliderRef.current.offsetWidth;
     sliderRef.current.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   }, [currentSlide]);
