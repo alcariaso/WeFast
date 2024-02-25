@@ -49,8 +49,7 @@ const Journal = () => {
                     <img className="task__image" src={iconMood}></img>
                     <div className="task__container" >
                         <h2 className="title" >MOOD</h2>
-                        <p className="text">Selected Mood: {selectedMood || 'None'}</p>
-
+                        <p className="text">Feeling: {selectedMood || 'None'}</p>
 
                     </div>
                 </div>

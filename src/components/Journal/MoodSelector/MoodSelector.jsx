@@ -5,7 +5,7 @@ import '../MoodSelector/MoodSelector.scss'
 
 
 const MoodSelector = ({ onSelect, isOpen, onClose }) => {
-    const moods = ['happy', 'sad', 'excited', 'grumpy', 'hungry'];
+    const moods = ['happy', 'sad', 'excited', 'grumpy', 'hungry','Motivated','tired','Relaxed'];
   
     const handleSelect = (mood) => {
       onSelect(mood);
@@ -16,7 +16,7 @@ const MoodSelector = ({ onSelect, isOpen, onClose }) => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <div className="mood-selector">
           {moods.map((mood) => (
-            <button key={mood} onClick={() => handleSelect(mood)}>{mood}</button>
+            <button  className="button"key={mood} onClick={() => handleSelect(mood)}>{mood}</button>
           ))}
         </div>
       </Modal>
