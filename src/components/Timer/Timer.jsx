@@ -1,113 +1,95 @@
 import React from "react";
 import '../Timer/Timer.scss';
-import TimerMain from "../TimerMain/TimerMain";
-import { useState, useEffect ,useRef} from "react";
+import {CountdownCircleTimer} from 'react-countdown-circle-timer'
+
+import { useState, useEffect} from "react";
 import HomeHub from "../HomeHub/HomeHub";
 
 
 const Timer = () => {
+    const [hours, setHours] = useState(0);
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
+    const [isRunning, setIsRunning] = useState(false);
+    const [buttonLabel, setButtonLabel] = useState('Start');
 
-    const [timeLeft, setTimeLeft] = useState({
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
-    });
 
-    const progressIndicatorCircleRef = useRef([]);
-  
-    useEffect(() => {
-      const hr = 0;
-      const min = 0;
-      const sec = 0;
-  
-      const hours = hr * 3600000;
-      const minutes = min * 60000;
-      const seconds = sec * 1000;
-  
-      const setTime = hours + minutes + seconds;
-      const startTime = Date.now();
-      const futureTime = startTime + setTime;
-  
-      const timerloop = setInterval(countDownTimer, 1000);
-      countDownTimer();
-  
-      function countDownTimer() {
-        const currentTime = Date.now();
-        const remainingTime = futureTime - currentTime;
-        const angle = (remainingTime / setTime) * 360;
-  
-        if (angle > 180) {
-          progressIndicatorCircleRef.current[2].style.display = "none";
-        } else {
-          progressIndicatorCircleRef.current[2].style.display = "block";
-        }
-  
-        progressIndicatorCircleRef.current[0].style.transform = `rotate(${
-          angle > 180 ? 180 : angle
-        }deg)`;
-        progressIndicatorCircleRef.current[1].style.transform = `rotate(${angle}deg)`;
-  
-        const hrs = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
-        const mins = Math.floor((remainingTime / (1000 * 60)) % 60);
-        const secs = Math.floor((remainingTime / 1000) % 60);
-  
-        setTimeLeft({
-          hours: hrs,
-          minutes: mins,
-          seconds: secs,
-        });
-  
-        if (remainingTime < 0) {
-          clearInterval(timerloop);
-          progressIndicatorCircleRef.current[0].style.display = "none";
-          progressIndicatorCircleRef.current[1].style.display = "none";
-          progressIndicatorCircleRef.current[2].style.display = "none";
-        }
-      }
-  
-      return () => {
-        clearInterval(timerloop);
-      };
-    }, []); // Run once on component mount
+    const handleStartStop = () => {
+        setIsRunning(!isRunning);
+        setButtonLabel(prevLabel => prevLabel === 'Start' ? 'Stop' : 'Start');
+    };
 
-    const TimerMainProps = {progressIndicatorCircleRef}
-  
+    const handleReset = () => {
+        setIsRunning(false);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
+    };
+
+    const formatTime = (value) => {
+        return value < 10 ? `0${value}` : `${value}`;
+    };
+
+    const renderTime = ({ remainingTime }) => {
+        const hoursLeft = Math.floor(remainingTime / 3600);
+        const minutesLeft = Math.floor((remainingTime % 3600) / 60);
+        const secondsLeft = remainingTime % 60;
+
+        return (
+            <div className="display">
+                <span>{formatTime(hoursLeft)}</span>:
+                <span>{formatTime(minutesLeft)}</span>:
+                <span>{formatTime(secondsLeft)}</span>
+            </div>
+        );
+    };
+
+    const handleComplete = () => {
+        setIsRunning(false);
+    };
+
     return (
-      <div className="timer">
-        {/* progress indicator */}
-        <TimerMain {...TimerMainProps}></TimerMain>
-        <div className="progressIndicator timer">
-          <div
-            ref={(el) => (progressIndicatorCircleRef.current[0] = el)}
-            className="progressIndicator__circle"
-          ></div>
-          <div
-            ref={(el) => (progressIndicatorCircleRef.current[1] = el)}
-            className="progressIndicator__circle"
-          ></div>
-          <div
-            ref={(el) => (progressIndicatorCircleRef.current[2] = el)}
-            className="progressIndicator__circle"
-          ></div>
-          <div className="progressIndicator__circle--outermost"></div>
+        <div className="countdown-timer">
 
-        </div>
 
-                <div className="progressIndicator timer">
-                     <div className="progressIndicator__circle" ></div>
-                     <div className="progressIndicator__circle" ></div>
-                     <div className="progressIndicator__circle" ></div>
-                     <div className="progressIndicator__circle--outermost"></div>
-                </div>           
+
+            <div className="timer">
+                {/* <CircleProgress percentage={percentage} /> */}
+                <CountdownCircleTimer
+                  isPlaying={isRunning}
+                  duration={(hours * 3600) + (minutes * 60) + seconds}
+                  // colors={[
+                  //     ['#fefefe', 0.33],
+                  //     ['#F7B801', 0.33],
+                  //     ['#A30000', 0.34],
+                  // ]}
   
-        <div>
+                  colors="#37a862"
+                  onComplete={handleComplete}
+                  className="timer"
+                    >
+                  {renderTime}
+                </CountdownCircleTimer>
 
 
-          <button className="button">Start</button>
+            </div>
+
+            
+            <div className="input-container">
+                <input className="input__time" type="number" value={hours} onChange={(e) => setHours(parseInt(e.target.value))} />
+                <span className="input__title">hours</span>
+                <input className="input__time" type="number" value={minutes} onChange={(e) => setMinutes(parseInt(e.target.value))} />
+                <span className="input__title">minutes</span>
+ 
+            </div>
+            <div className="controls">
+                <button className="button" onClick={handleStartStop}>{buttonLabel}</button>
+                <button className="button" onClick={handleReset}>Reset</button>
+            </div>
+
+            <HomeHub></HomeHub>
         </div>
-        <HomeHub></HomeHub>
-      </div>
     );
-  };
-  
-  export default Timer;
+};
+
+export default Timer;

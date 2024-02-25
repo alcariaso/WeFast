@@ -1,103 +1,68 @@
 * {
     box-sizing: border-box;
 }
-.timer {
+
+.countdown-timer {
     display: flex;
+    flex-direction: column;
+    height: 70vh;
     justify-content: center;
-    align-items: center;
     background-color: #012527ee;
-        width: 100%;
-        height: 80vh;
 
-    .progressIndicator {
-        width: 280px;
-        height: 280px;
-        background-color:#012527ee;
-       
-        border-radius: 50%;
-        position: absolute;
-        overflow: hidden;
-        z-index: 1;
 
-        &__cirlce {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;  
-            transform-origin: right center;
-            
-        }
-
-        &__circle:nth-child(1) {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0; 
-            background-color: rgb(55, 168, 98);
-            z-index: 2;
-            transform-origin: right center;
-        }
-
-        &__circle:nth-child(2) {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0; 
-            background-color:rgb(55, 168, 98);
-        
-            z-index: 3;
-            transform-origin: right center;
-        }
-
-        &__circle:nth-child(3) {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0; 
-            background-color: #012527ee;
-            z-index: 4;
-            display: none;
-            transform-origin: right center;
-        }
-
-        &__circle--outermost{
-            width: 240px;
-            height: 240px;
-            position: absolute;
-            background-color: #021e20ee;
-            z-index: 3;
-            border-radius: 50%;
-            z-index: 5;
-        }
-
-    }
-}
-
-.progressIndicator:hover .progressIndicator__circle:nth-child(1){
-    transform: rotate(180deg);
-    transition: 1s linear;
-}
-
-.progressIndicator:hover .progressIndicator__circle:nth-child(2){
-    transform: rotate(360deg);
-    transition: 2s linear;
-}
-
-.progressIndicator:hover .progressIndicator__circle:nth-child(3){
-    opacity: 0;
-    transition: opacity 0s 1s;
-   
+    .timer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        height: 300px;
+        margin: 0 auto;
+        font-size: 50px;
+        color:#37a862;
     
+    svg {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+    
+    }
+    
+      }
 }
 
+.input-container {
 
-// .progressIndicator__circle:nth-child(1) {
-//     transform: rotate(360deg);
-//     transition: 3s linear;
-// }
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
 
 
+
+    .input__title {
+        font-weight: 600;
+        margin: 1rem;
+    }
+
+    .input__time {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+  }
+
+  .controls {
+    text-align: center;
+
+
+    .button {
+        margin: 1rem;
+    }
+  }
