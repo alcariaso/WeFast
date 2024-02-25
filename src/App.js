@@ -1,12 +1,14 @@
-import Header from '../src/components/Header/Header';
-import SubTimer from '../src/components/SubTimer/SubTimer';
 import './App.css';
+import HomeHub from './components/HomeHub/HomeHub';
+import Journal from './components/Journal/Journal';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <SubTimer></SubTimer>
+      
+     
+      <HomeHub></HomeHub>
+      
     </div>
   );
 }
