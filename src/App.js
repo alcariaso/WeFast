@@ -14,6 +14,7 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
+
           <Routes>
               <Route path='/' element={<Timer/>}></Route>
               <Route path='/Journal' element={<Journal/>}></Route>

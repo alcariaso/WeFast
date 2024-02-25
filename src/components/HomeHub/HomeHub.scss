@@ -1,18 +1,24 @@
 
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
+
 .homeNav {
     position: fixed;
+    width: 100vw;
+    height: 9vh;
     bottom: 0;
-    background-color: rgb(219, 222, 224);
-
-    // background-image: linear-gradient(to top, #11be6a, #11ceceee);
+    background-color: $color-backGround-page;
     box-shadow: 3px 0px 10px black;
     border-radius: 10px;
-   
+    z-index: 0;
+    
 
     &__container {
        
         height: 7vh;
-        width: 96vw;
+        width: 100vw;
         padding: 1rem;
         display: flex;
         justify-content: space-around;

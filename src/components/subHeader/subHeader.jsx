@@ -1,7 +1,7 @@
 import React from "react";
-import '../Header/Header.scss';
+import '../SubHeader/SubHeader.scss';
 
-const Header = () => {
+const SubHeader = () => {
 
     return (
         <header className="header">
@@ -10,4 +10,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default SubHeader;

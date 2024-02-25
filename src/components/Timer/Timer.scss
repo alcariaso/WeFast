@@ -9,7 +9,8 @@
 .countdown-timer {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     background-color: #012527ee;
 
@@ -22,6 +23,7 @@
         width:300px;
         height: 300px;
         margin: 0 auto;
+        @include mobile-H1;
         font-size: 50px;
         color:#37a862;
     
@@ -48,16 +50,18 @@
 
 
     .input__title {
-        font-weight: 600;
+        @include mobile-H2;
+        color: $color-secondary-text-special;
         margin: 1rem;
     }
 
     .input__time {
         text-align: center;
+        border-radius: 10px;
         width: 40px;
         height: 40px;
-        font-weight: 600;
-        font-size: 18px;
+        background-color: $color-backGround-nav;
+        @include mobile-P1;
     }
 
   }
@@ -67,6 +71,11 @@
 
 
     .button {
+        width: 100px;
+        border-radius: 20px;
+        background-color: $color-backGround-nav-special;
         margin: 1rem;
+        @include mobile-P1;
+        color: $color-secondary-text-special;
     }
   }

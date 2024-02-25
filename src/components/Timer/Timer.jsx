@@ -1,7 +1,7 @@
 import React from "react";
 import '../Timer/Timer.scss';
 import {CountdownCircleTimer} from 'react-countdown-circle-timer'
-
+import SubHeader from '../SubHeader/SubHeader';
 import { useState, useEffect} from "react";
 import HomeHub from "../HomeHub/HomeHub";
 
@@ -49,10 +49,11 @@ const Timer = () => {
     };
 
     return (
+      <main>
+        <SubHeader></SubHeader>
+        
         <div className="countdown-timer">
-
-
-
+     
             <div className="timer">
                 {/* <CircleProgress percentage={percentage} /> */}
                 <CountdownCircleTimer
@@ -79,7 +80,7 @@ const Timer = () => {
                 <input className="input__time" type="number" value={hours} onChange={(e) => setHours(parseInt(e.target.value))} />
                 <span className="input__title">hours</span>
                 <input className="input__time" type="number" value={minutes} onChange={(e) => setMinutes(parseInt(e.target.value))} />
-                <span className="input__title">minutes</span>
+                <span className="input__title">min</span>
  
             </div>
             <div className="controls">
@@ -87,8 +88,11 @@ const Timer = () => {
                 <button className="button" onClick={handleReset}>Reset</button>
             </div>
 
-            <HomeHub></HomeHub>
-        </div>
+            
+          </div>
+
+          <HomeHub></HomeHub>
+        </main> 
     );
 };
 
