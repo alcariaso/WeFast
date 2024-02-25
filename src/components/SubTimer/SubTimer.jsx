@@ -1,7 +1,6 @@
 import React from "react";
 import '../SubTimer/SubTimer.scss';
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import CircleProgress from "../CircleProgress/CircleProgress";
+import {CountdownCircleTimer} from 'react-countdown-circle-timer'
 
 import { useState, useEffect} from "react";
 
