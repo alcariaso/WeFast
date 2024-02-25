@@ -1,0 +1,64 @@
+
+.food {
+
+    .subHeader {
+
+        &__title {
+
+
+        }
+        
+        .foodOption {
+            display: flex;
+
+            .options {
+                margin-right: 1rem;
+                background-color: rgb(159, 162, 161);
+                padding: .5rem;
+                border-radius: 30px;
+                width: 100px;
+                text-align: center;
+                font-weight: 500;
+                color: #e1e1e2;
+            }
+        }
+    }
+
+    // &__feature{
+    //     width: 100%;
+    //     overflow: hidden;
+    //     position: relative;
+
+    //     .slide {
+    //         float: left; /* Float the slides next to each other */
+    //         width: 100%;
+
+    //         &__img {
+    //             width: 100%;
+    //             height: 300px;
+    //             object-fit: cover;
+    //             display: block;
+    //         }
+
+    //         .heart {
+                
+    //         }
+    //     }
+    // }
+
+    &__list {
+
+        .container {
+
+
+            .item__img {
+
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+}
