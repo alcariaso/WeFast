@@ -7,7 +7,7 @@ import item2 from '../../assets/foodImages/food-item-2.jpg'
 import item3 from '../../assets/foodImages/food-item-3.jpg'
 import item4 from '../../assets/foodImages/food-item-4.jpg'
 import item5 from '../../assets/foodImages/food-item-5.jpg'
-
+import ImageSlider from '../ImageSlider/ImageSlider'
 const NutritionFood = () => {
 
     const [active, setActive] = useState(false)
@@ -22,31 +22,12 @@ const NutritionFood = () => {
                     <p className='options'>Dinner</p>
                 </div>
             </div>
-
-{/* 
+            
             <section className="food__feature">
-                <div className="slide">
-                    <img className="slide__img" src={item1}></img>
-                    <Heart
-                    className="heart"
-                    width={24}
-                    height={24}
-                    active={active}
-                    onClick={() => setActive(!active)}
-                  />
-                </div>
-                <div className="slide">
-                    <img className="slide__img" src={item2}></img>
-                    <Heart
-                    className="heart"
-                    width={24}
-                    height={24}
-                    active={active}
-                    onClick={() => setActive(!active)}
-                  />
-                </div>
+                <ImageSlider></ImageSlider>
+            </section>
 
-            </section> */}
+           
 
             <section className="food__list">
                 <div className="container">
