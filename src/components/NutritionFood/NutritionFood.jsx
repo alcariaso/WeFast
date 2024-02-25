@@ -22,12 +22,18 @@ const NutritionFood = () => {
                     <p className='options'>Dinner</p>
                 </div>
             </div>
-            
+
             <section className="food__feature">
                 <ImageSlider></ImageSlider>
             </section>
 
-           
+
+            <section className="background">
+                <div className="">
+
+                </div>
+
+            </section>
 
             <section className="food__list">
                 <div className="container">
@@ -40,7 +46,32 @@ const NutritionFood = () => {
                     />
                 </div>
 
+                <div className="container">
+                    <img className="item__img" src={item5}></img>
+                    <Heart
+                        width={24}
+                        height={24}
+                        active={active}
+                        onClick={() => setActive(!active)}
+                    />
+                </div>
+
+                
+                <div className="container">
+                    <img className="item__img" src={item5}></img>
+                    <Heart
+                        width={24}
+                        height={24}
+                        active={active}
+                        onClick={() => setActive(!active)}
+                    />
+                </div>
+
+
+
             </section>
+
+
 
         </main>
     )

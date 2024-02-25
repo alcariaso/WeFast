@@ -10,7 +10,7 @@ function App() {
       
       <NutritionFood></NutritionFood>
 
-      <HomeHub></HomeHub>
+  
     </div>
   );
 }
