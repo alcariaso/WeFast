@@ -1,0 +1,24 @@
+.modal {
+        // background-color: white;
+        // padding: 20px;
+        // border-radius: 20px; /* Adjust the value to control the curvature */
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        // position: relative;
+        // width: 20rem;
+        // height: 40vh;
+
+    &__overlay {
+
+    }
+
+    &__content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px; /* Adjust the value to control the curvature */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        width: 18rem;
+        height: 40vh;
+
+    }
+}
