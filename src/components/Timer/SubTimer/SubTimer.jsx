@@ -1,11 +1,11 @@
 import React from "react";
 import '../SubTimer/SubTimer.scss';
-import {CountdownCircleTimer} from 'react-countdown-circle-timer'
-import profileImg from '../../assets/images/priyanka-chopra.jpg'
+import {CountdownCircleTimer} from 'react-countdown-circle-timer';
+import profileImg from '../../../assets/images/priyanka-chopra.jpg';
 import { Link } from "react-router-dom";
 import { useState, useEffect} from "react";
-import HomeHub from "../HomeHub/HomeHub";
-import Header from '../Header/Header';
+import HomeHub from "../../HomeHub/HomeHub";
+import Header from '../../Header/Header';
 
 const TimerMain = () => {
     const [hours, setHours] = useState(0);

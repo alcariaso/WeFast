@@ -7,7 +7,7 @@ import Nutrition from '../src/components/Nutrition/Nutrition';
 import NutritionFood from '../src/components/NutritionFood/NutritionFood';
 import Community from '../src/components/Community/Community';
 import Timer from '../src/components/Timer/Timer';
-import SubTimer from '../src/components/SubTimer/SubTimer'
+import SubTimer from '../src/components/Timer/SubTimer/SubTimer'
 
 
 
