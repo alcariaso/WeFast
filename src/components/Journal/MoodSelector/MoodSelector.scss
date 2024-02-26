@@ -1,0 +1,29 @@
+
+@import '../../../styles/Partials/mixin';
+@import '../../../styles/Partials/variables';
+@import '../../../styles/Partials/global';
+@import '../../../styles/Utilities/fontUtils';
+
+
+
+.mood-selector {
+
+    height: auto;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .button {
+
+        height: 7vh;
+        width: 40%;
+        border-radius: 10px;
+        @include mobile-P1;
+        color: #42504c;
+        margin-bottom: 1rem;
+        background-color: #bfc6c5;
+        box-shadow: 2px 0px 8px rgb(45, 44, 44)
+    }
+}

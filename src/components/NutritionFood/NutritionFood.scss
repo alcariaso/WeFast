@@ -1,0 +1,90 @@
+.food {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  z-index: 0;
+  background-color: #e1e1e2;
+  width: 100vw;
+  height: 100%;
+
+  .container {
+
+    .navBack {
+      
+    }
+  }
+
+  .foodHeader {
+    padding-left: 1rem;
+    &__title {
+      margin-top: 0;
+      color: #2b2f2f;
+    }
+
+    .foodOption {
+      display: flex;
+
+      .options {
+        margin-right: 1rem;
+        background-color: rgb(159, 162, 161);
+        padding: .5rem;
+        border-radius: 30px;
+        width: 100px;
+        text-align: center;
+        font-weight: 500;
+        color: #e1e1e2;
+      }
+    }
+  }
+
+  &__feature {
+    position: relative; /* Change position to relative */
+    z-index: 2; /* Ensure feature is on top of list */
+  }
+
+  .background {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(238, 232, 232);
+
+  }
+  
+
+  &__list {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px; /* Set a fixed height */
+    overflow-y: scroll; 
+
+    .container {
+        // display: flex;
+
+        .item__img {
+
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .heart {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+        }
+
+    }
+
+    .recipe {
+        width: 100vw;
+        height: auto;
+    }
+
+    
+
+  }
+}
