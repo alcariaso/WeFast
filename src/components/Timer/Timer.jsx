@@ -3,7 +3,7 @@ import '../Timer/Timer.scss';
 import {CountdownCircleTimer} from 'react-countdown-circle-timer'
 import SubHeader from '../Header/SubHeader/subHeader';
 import { useState, useEffect} from "react";
-import SubHomeHub from "../SubHomeHub/SubHomeHub";
+import SubHomeHub from "../../components/HomeHub/SubHomeHub/SubHomeHub";
 import profileImg from '../../assets/images/priyanka-chopra.jpg';
 import iconChat from '../../assets/icons/icon-chat.png';
 import { Link } from "react-router-dom";
