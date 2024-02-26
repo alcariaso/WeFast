@@ -1,4 +1,10 @@
 
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
+
+
 
 .journal {
     display: flex;
@@ -16,6 +22,7 @@
         width: 100vw;
         text-align: center;
         color: #5b6060;
+
     }
 
     .taskbox{
@@ -74,17 +81,16 @@
                 text-shadow: 1px 0px 3px #2e2c2c;
                 color:#363737;
                 font-size: 20px;
+                margin-bottom: 0;
                 
             }
 
             .text {
-                font-size: 18px;
-                font-weight: 600;
+                @include mobile-P1;
                 color:#363737;
                 margin-top: 0;
                 
             }
-
 
         }
     }

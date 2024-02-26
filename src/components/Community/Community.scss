@@ -1,12 +1,29 @@
-.community {
 
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
+
+
+.community {
+    background-color: #ecf1f1;
+    padding-top: 1rem;
     padding-bottom: 10vh;
  
-   
+   .feedHeader {
 
+
+        &__title {
+            @include mobile-H2;
+            color: #434544;
+            padding-left: 1rem;
+       
+        }
+   }
     .feed {
         margin-bottom: 1rem;
         margin-top: 1rem;
+        margin: 0;
 
         &__top {
             display: flex;
@@ -26,10 +43,11 @@
                     width: 45px;
                     border-radius: 50%;
                     margin-right: .5rem;
+                    border: 3px solid rgb(157, 167, 164);
                 }
 
                 &__title {
-
+                    @include mobile-P1
                 }
             }
 
@@ -44,10 +62,11 @@
             .text {
                 margin: 0;
                 padding: 1rem;
-                font-size: 18px;
+                @include mobile-P2;
+               
 
                 &--isCompleted{
-                    font-weight: 600;
+                    @include mobile-P1;
                 }
             }
             .body {
