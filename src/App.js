@@ -4,6 +4,7 @@ import './App.css';
 import HomeHub from './components/HomeHub/HomeHub';
 import Journal from '../src/components/Journal/Journal';
 import Nutrition from '../src/components/Nutrition/Nutrition';
+import NutritionFood from '../src/components/NutritionFood/NutritionFood';
 import Community from '../src/components/Community/Community';
 import Timer from '../src/components/Timer/Timer';
 import SubTimer from '../src/components/SubTimer/SubTimer'
@@ -21,6 +22,7 @@ function App() {
               <Route path='/Subtimer' element={<Timer/>}></Route>
               <Route path='/Journal' element={<Journal/>}></Route>
               <Route path='/Nutrition' element={<Nutrition/>}></Route>
+              <Route path='/NutritionFood' element={<NutritionFood/>}></Route>
               <Route path='/Community' element={<Community/>}></Route>
           </Routes>
       </BrowserRouter>
