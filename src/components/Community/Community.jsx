@@ -16,6 +16,10 @@ const Community = () => {
 
         <main className="community">
 
+            <div className="feedHeader">
+                <h1 className="feedHeader__title">UL I V E Updates!</h1>
+            </div>
+
             <div className="feed">
 
                 <div className="feed__top">
