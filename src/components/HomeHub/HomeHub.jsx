@@ -3,7 +3,7 @@ import '../HomeHub/HomeHub.scss';
 import iconHome from '../../assets/icons/icon-timer.png';
 import iconCommunity from '../../assets/icons/icon-community2.png';
 import iconActivity from '../../assets/icons/icon-activity2.png';
-import iconProfile from '../../assets/icons/icon-activity2.png';
+import iconProfile from '../../assets/icons/icon-user2.png';
 import iconFood from '../../assets/icons/icon-foodNutrition.png'
 import { Link } from "react-router-dom";
 

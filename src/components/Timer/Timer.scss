@@ -28,15 +28,15 @@
         box-shadow: 0px 0px 3px  2px rgb(84, 87, 86);
 
 
-        &__circle {
-            height: 40px;
-            width: 45px;
-            border-radius: 50%;
-            background-color: #188943;
-            border: 2px solid rgb(150, 158, 155);
+            &__circle {
+                height: 40px;
+                width: 45px;
+                border-radius: 50%;
+                background-color: #188943;
+                border: 2px solid rgb(150, 158, 155);
 
+            }
         }
-    }
 
     .profileView {
         position: absolute;
@@ -76,44 +76,53 @@
     }
     
       }
-}
-
-.input-container {
-
-    width: 100vw;
-    height: auto;
-    padding: 1rem;
-    text-align: center;
 
 
+    .input-container {
 
-    .input__title {
-        @include mobile-H2;
-        color: $color-secondary-text-special;
-        margin: 1rem;
-    }
-
-    .input__time {
+        width: 100vw;
+        height: auto;
+        padding: 1rem;
         text-align: center;
-        border-radius: 10px;
-        width: 40px;
-        height: 40px;
-        background-color: $color-backGround-nav;
-        @include mobile-P1;
-    }
-
-  }
-
-  .controls {
-    text-align: center;
 
 
-    .button {
-        width: 100px;
-        border-radius: 20px;
-        background-color: $color-backGround-nav-special;
-        margin: 1rem;
-        @include mobile-P1;
-        color: $color-secondary-text-special;
-    }
-  }
+
+            .input__title {
+                @include mobile-H2;
+                color: $color-secondary-text-special;
+                margin: 1rem;
+            }
+
+            .input__time {
+                text-align: center;
+                border-radius: 10px;
+                width: 40px;
+                height: 40px;
+                background-color: $color-backGround-nav;
+                @include mobile-P1;
+            }
+
+        }
+
+    .controls {
+        text-align: center;
+
+
+            .button {
+                width: 100px;
+                border-radius: 20px;
+                background-color: $color-backGround-nav-special;
+                margin: 1rem;
+                @include mobile-P1;
+                color: $color-secondary-text-special;
+            }
+     }
+
+    
+    //  .info {
+
+    //     height: 30vh;
+    //     width: 100%;
+    //     background-color: #188943;
+    // }
+}
