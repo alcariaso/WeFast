@@ -75,7 +75,7 @@ const TimerMain = () => {
                   //     ['#A30000', 0.34],
                   // ]}
   
-                  colors="#A30000"
+                  colors="#1b9956"
                   onComplete={handleComplete}
                   className="timer"
                     >

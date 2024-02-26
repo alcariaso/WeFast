@@ -4,7 +4,8 @@ import {CountdownCircleTimer} from 'react-countdown-circle-timer'
 import SubHeader from '../SubHeader/subHeader';
 import { useState, useEffect} from "react";
 import SubHomeHub from "../SubHomeHub/SubHomeHub";
-import profileImg from '../../assets/images/priyanka-chopra.jpg'
+import profileImg from '../../assets/images/priyanka-chopra.jpg';
+import iconChat from '../../assets/icons/icon-chat.png';
 import { Link } from "react-router-dom";
 
 
@@ -62,6 +63,7 @@ const Timer = () => {
 
             <div className="profileView">
               <img className="prof-Img" src={profileImg}></img>
+              <img className="prof-chat" src={iconChat}></img>
             </div>
      
             <div className="timer">
