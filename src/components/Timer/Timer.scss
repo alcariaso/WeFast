@@ -14,7 +14,45 @@
     justify-content: center;
     background-color: #012527ee;
 
+    .toggle {
+        position: absolute;
+        top:11%;
+        right: 38%;
+        height: 45px;
+        width: 110px;
+        background-color:#02281dfe;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        border: 2px solid rgb(157, 167, 164);
+        box-shadow: 0px 0px 3px  2px rgb(84, 87, 86);
 
+
+        &__circle {
+            height: 40px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: #188943;
+            border: 2px solid rgb(150, 158, 155);
+
+        }
+    }
+
+    .profileView {
+        position: absolute;
+        top:12%;
+        right: 0;
+        padding: .5rem;
+
+        .prof-Img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 3px solid rgb(157, 167, 164);
+            background-size: cover;
+           
+        }
+    }
     .timer {
         position: relative;
         display: flex;

@@ -4,6 +4,7 @@ import {CountdownCircleTimer} from 'react-countdown-circle-timer'
 import SubHeader from '../SubHeader/SubHeader';
 import { useState, useEffect} from "react";
 import SubHomeHub from "../SubHomeHub/SubHomeHub";
+import profileImg from '../../assets/images/priyanka-chopra.jpg'
 
 
 const Timer = () => {
@@ -53,6 +54,14 @@ const Timer = () => {
         <SubHeader></SubHeader>
         
         <div className="countdown-timer">
+          
+            <div className="toggle">
+              <div className="toggle__circle"></div>
+            </div>
+
+            <div className="profileView">
+              <img className="prof-Img" src={profileImg}></img>
+            </div>
      
             <div className="timer">
                 {/* <CircleProgress percentage={percentage} /> */}
