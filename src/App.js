@@ -6,6 +6,7 @@ import Journal from '../src/components/Journal/Journal';
 import Nutrition from '../src/components/Nutrition/Nutrition';
 import Community from '../src/components/Community/Community';
 import Timer from '../src/components/Timer/Timer';
+import SubTimer from '../src/components/SubTimer/SubTimer'
 
 
 
@@ -16,7 +17,8 @@ function App() {
       <BrowserRouter>
 
           <Routes>
-              <Route path='/' element={<Timer/>}></Route>
+              <Route path='/' element={<SubTimer/>}></Route>
+              <Route path='/Subtimer' element={<Timer/>}></Route>
               <Route path='/Journal' element={<Journal/>}></Route>
               <Route path='/Nutrition' element={<Nutrition/>}></Route>
               <Route path='/Community' element={<Community/>}></Route>

@@ -1,15 +1,62 @@
-* {
-    box-sizing: border-box;
-}
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
 
-.countdown-timer {
+
+
+.subcountdown-timer {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
+    background-color: #b9c5c5ee;
+
+    .toggle {
+        position: absolute;
+        top:11%;
+        right: 38%;
+        height: 45px;
+        width: 110px;
+        background-color:#bbbfbefe;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        border-radius: 50px;
+        border: 2px solid rgb(157, 167, 164);
+        box-shadow: 0px 0px 3px  2px rgb(84, 87, 86);
 
 
-    .timer {
+        &__circle {
+           
+            height: 40px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: #4f5d54;
+            border: 2px solid rgb(150, 158, 155);
+
+        }
+    }
+
+    .profileView {
+        position: absolute;
+        top:12%;
+        right: 0;
+        padding: .5rem;
+
+        .prof-Img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 3px solid rgb(157, 167, 164);
+            background-size: cover;
+           
+        }
+    }
+
+
+    .subtimer {
         position: relative;
         display: flex;
         justify-content: center;
@@ -32,7 +79,7 @@
       }
 }
 
-.input-container {
+.subinput-container {
 
     width: 100vw;
     height: auto;
@@ -41,26 +88,34 @@
 
 
 
-    .input__title {
-        font-weight: 600;
+    .subinput__title {
+        @include mobile-H2;
+        color: $color-primary-text;
         margin: 1rem;
     }
 
-    .input__time {
+
+    .subinput__time {
         text-align: center;
+        border-radius: 10px;
         width: 40px;
         height: 40px;
-        font-weight: 600;
-        font-size: 18px;
+        background-color: $color-backGround-nav;
+        @include mobile-P1;
     }
 
   }
 
-  .controls {
+  .subcontrols {
     text-align: center;
 
 
-    .button {
+    .subbutton {
+        width: 100px;
+        border-radius: 20px;
+        background-color: $color-backGround-nav-special;
         margin: 1rem;
+        @include mobile-P1;
+        color: $color-secondary-text-special;
     }
   }

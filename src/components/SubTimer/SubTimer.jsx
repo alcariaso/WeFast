@@ -1,9 +1,11 @@
 import React from "react";
 import '../SubTimer/SubTimer.scss';
 import {CountdownCircleTimer} from 'react-countdown-circle-timer'
-
+import profileImg from '../../assets/images/priyanka-chopra.jpg'
+import { Link } from "react-router-dom";
 import { useState, useEffect} from "react";
-
+import HomeHub from "../HomeHub/HomeHub";
+import Header from '../Header/Header';
 
 const TimerMain = () => {
     const [hours, setHours] = useState(0);
@@ -48,11 +50,21 @@ const TimerMain = () => {
     };
 
     return (
-        <div className="countdown-timer">
+        <main>
+            <Header></Header>
+            <div className="subcountdown-timer">
+
+            <div className="toggle">
+              <Link to="/SubTimer"><div className="toggle__circle"></div></Link>
+            </div>
+
+            <div className="profileView">
+              <img className="prof-Img" src={profileImg}></img>
+            </div>
 
 
 
-            <div className="timer">
+            <div className="subtimer">
                 {/* <CircleProgress percentage={percentage} /> */}
                 <CountdownCircleTimer
                   isPlaying={isRunning}
@@ -74,18 +86,20 @@ const TimerMain = () => {
             </div>
 
             
-            <div className="input-container">
-                <input className="input__time" type="number" value={hours} onChange={(e) => setHours(parseInt(e.target.value))} />
-                <span className="input__title">hours</span>
-                <input className="input__time" type="number" value={minutes} onChange={(e) => setMinutes(parseInt(e.target.value))} />
-                <span className="input__title">minutes</span>
+            <div className="subinput-container">
+                <input className="subinput__time" type="number" value={hours} onChange={(e) => setHours(parseInt(e.target.value))} />
+                <span className="subinput__title">hours</span>
+                <input className="subinput__time" type="number" value={minutes} onChange={(e) => setMinutes(parseInt(e.target.value))} />
+                <span className="subinput__title">minutes</span>
  
             </div>
-            <div className="controls">
-                <button className="button" onClick={handleStartStop}>{buttonLabel}</button>
-                <button className="button" onClick={handleReset}>Reset</button>
+            <div className="subcontrols">
+                <button className="subbutton" onClick={handleStartStop}>{buttonLabel}</button>
+                <button className="subbutton" onClick={handleReset}>Reset</button>
             </div>
         </div>
+        <HomeHub></HomeHub>
+        </main>
     );
 };
 

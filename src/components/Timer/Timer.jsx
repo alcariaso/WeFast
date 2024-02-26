@@ -5,6 +5,7 @@ import SubHeader from '../SubHeader/SubHeader';
 import { useState, useEffect} from "react";
 import SubHomeHub from "../SubHomeHub/SubHomeHub";
 import profileImg from '../../assets/images/priyanka-chopra.jpg'
+import { Link } from "react-router-dom";
 
 
 const Timer = () => {
@@ -56,7 +57,7 @@ const Timer = () => {
         <div className="countdown-timer">
           
             <div className="toggle">
-              <div className="toggle__circle"></div>
+              <Link to="/"><div className="toggle__circle"></div></Link>
             </div>
 
             <div className="profileView">
