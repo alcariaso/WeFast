@@ -1,5 +1,5 @@
 import React from 'react';
-import '../RecipeCards/RecipeCard.scss';
+import './RecipeCard.scss';
 
 const RecipeCards = ({ recipes }) => {
   // Validate recipes prop

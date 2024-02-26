@@ -1,10 +1,10 @@
 import React from 'react';
 import RecipeCards from '../RecipeCards/RecipeCard';
-import image1 from '../../assets/foodImages/food-item-6.jpg'
-import image2 from '../../assets/foodImages/food-item-7.jpg'
-import image3 from '../../assets/foodImages/food-item-8.jpg'
-import image4 from '../../assets/foodImages/food-item-9.jpg'
-import image5 from '../../assets/foodImages/food-item-10.jpg'
+import image1 from '../../../../assets/foodImages/food-item-6.jpg'
+import image2 from '../../../../assets/foodImages/food-item-7.jpg'
+import image3 from '../../../../assets/foodImages/food-item-8.jpg'
+import image4 from '../../../../assets/foodImages/food-item-9.jpg'
+import image5 from '../../../../assets/foodImages/food-item-10.jpg'
 
 const Recipes = () => {
   const recipes = [

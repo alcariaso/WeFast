@@ -4,7 +4,7 @@ import './App.css';
 import HomeHub from './components/HomeHub/HomeHub';
 import Journal from '../src/components/Journal/Journal';
 import Nutrition from '../src/components/Nutrition/Nutrition';
-import NutritionFood from '../src/components/NutritionFood/NutritionFood';
+import NutritionFood from '../src/components/Nutrition/NutritionFood/NutritionFood';
 import Community from '../src/components/Community/Community';
 import Timer from '../src/components/Timer/Timer';
 import SubTimer from '../src/components/Timer/SubTimer/SubTimer'
