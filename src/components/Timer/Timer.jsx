@@ -3,7 +3,7 @@ import '../Timer/Timer.scss';
 import {CountdownCircleTimer} from 'react-countdown-circle-timer'
 import SubHeader from '../SubHeader/SubHeader';
 import { useState, useEffect} from "react";
-import HomeHub from "../HomeHub/HomeHub";
+import SubHomeHub from "../SubHomeHub/SubHomeHub";
 
 
 const Timer = () => {
@@ -91,7 +91,7 @@ const Timer = () => {
             
           </div>
 
-          <HomeHub></HomeHub>
+          <SubHomeHub></SubHomeHub>
         </main> 
     );
 };

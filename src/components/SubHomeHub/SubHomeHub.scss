@@ -1,0 +1,39 @@
+
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
+
+.SubhomeNav {
+    position: fixed;
+    width: 100vw;
+    height: 9vh;
+    bottom: 0;
+
+    background-image: linear-gradient(to top, #2bc67b, #043436ee);
+    box-shadow: 3px 0px 10px black;
+    border-radius: 10px;
+    z-index: 0;
+    
+
+    &__container {
+       
+        height: 7vh;
+        width: 100vw;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+
+        .Subnav {
+         height: 5vh;
+         box-shadow: 3px 0px 10px white;
+     
+        }
+
+    }
+
+  
+
+   
+
+}
