@@ -98,6 +98,8 @@ const Timer = () => {
                 <button className="button" onClick={handleReset}>Reset</button>
             </div>
 
+            <div>Hello</div>
+
             
           </div>
 
