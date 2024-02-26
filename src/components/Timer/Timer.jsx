@@ -1,7 +1,7 @@
 import React from "react";
 import '../Timer/Timer.scss';
 import {CountdownCircleTimer} from 'react-countdown-circle-timer'
-import SubHeader from '../SubHeader/SubHeader';
+import SubHeader from '../SubHeader/subHeader';
 import { useState, useEffect} from "react";
 import SubHomeHub from "../SubHomeHub/SubHomeHub";
 import profileImg from '../../assets/images/priyanka-chopra.jpg'
