@@ -1,5 +1,12 @@
+
+@import '../../styles/Partials/mixin';
+@import '../../styles/Partials/variables';
+@import '../../styles/Partials/global';
+@import '../../styles/Utilities/fontUtils';
+
+
 .recipe-card {
-    width: 45%;
+    width: 46%;
     margin-right: .5rem;
     margin-left: .5rem;
     margin-bottom: 2%;
@@ -14,17 +21,19 @@
 
 
       &__title {
-
+        @include mobile-H2;
+        color: $color-primary-text;
 
       }
 
       &__img {
-
-
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
       }
 
       &__text{
-
+        @include mobile-P2
         
       }
     }
