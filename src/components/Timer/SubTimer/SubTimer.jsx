@@ -58,10 +58,10 @@ const TimerMain = () => {
               <Link to="/SubTimer"><div className="toggle__circle"></div></Link>
             </div>
 
-            <div className="profileView">
+            {/* <div className="profileView">
               <img className="prof-Img" src={profileImg}></img>
             </div>
-
+ */}
 
 
             <div className="subtimer">

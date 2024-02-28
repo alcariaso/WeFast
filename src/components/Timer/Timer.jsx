@@ -88,7 +88,7 @@ const Timer = () => {
             </div>
 
             
-            <div className="input-container">
+            {/* <div className="input-container">
                 <input className="input__time" type="number" value={hours} onChange={(e) => setHours(parseInt(e.target.value))} />
                 <span className="input__title">hours</span>
                 <input className="input__time" type="number" value={minutes} onChange={(e) => setMinutes(parseInt(e.target.value))} />
@@ -98,16 +98,16 @@ const Timer = () => {
             <div className="controls">
                 <button className="button" onClick={handleStartStop}>{buttonLabel}</button>
                 <button className="button" onClick={handleReset}>Reset</button>
-            </div>
+            </div> */}
 
-            <div className="info">Hello
-              <p className="info__text">HEllo</p>
+            <div className="info">
+              <p className="info__text">Get that Summer Body!</p>
             </div>
 
             
           </div>
 
-          <SubHomeHub></SubHomeHub>
+          {/* <SubHomeHub></SubHomeHub> */}
         </main> 
     );
 };
