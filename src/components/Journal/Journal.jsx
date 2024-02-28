@@ -9,13 +9,19 @@ import { useState } from 'react';
 import MoodSelector from '../Journal/MoodSelector/MoodSelector';
 import { Link } from "react-router-dom";
 import HomeHub from "../HomeHub/HomeHub";
+import MedicineLog from "./MedicineLog/MedicineLog";
 
 
 const Journal = () => {
     const [selectedMood, setSelectedMood] = useState(null);
     const [isMoodSelectorOpen, setIsMoodSelectorOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false); // Add state variable to manage modal visibility
-    
+    const [isWaterTaskOpen, setIsWaterTaskOpen] = useState(false);
+    const [isMedicineTaskOpen, setIsMedicineTaskOpen] = useState(false);
+    const [isActivityTaskOpen, setIsActivityTaskOpen] = useState(false);
+    const [isBloodSugarTaskOpen, setIsBloodSugarTaskOpen] = useState(false);
+    const [selectedMedicine, setSelectedMedicine] = useState(null);
+
     const handleModalOpen = () => {
         setIsModalOpen(!isModalOpen);
       };
@@ -28,12 +34,42 @@ const Journal = () => {
       const handleMoodSelectorToggle = () => {
         setIsMoodSelectorOpen(!isMoodSelectorOpen);
       };
+
+      const handleMedicineSelect = (medicine) => {
+        setSelectedMedicine(medicine);
+        setIsMedicineTaskOpen(false);
+    };
+
+
+      const handleTaskOpen = (taskName) => {
+        switch (taskName) {
+            case 'mood':
+                setIsMoodSelectorOpen(!isMoodSelectorOpen);
+                break;
+            case 'water':
+                setIsWaterTaskOpen(!isWaterTaskOpen);
+                break;
+            case 'medicine':
+                setIsMedicineTaskOpen(!isMedicineTaskOpen);
+                break;
+            case 'activity':
+                setIsActivityTaskOpen(!isActivityTaskOpen);
+                break;
+            case 'bloodSugar':
+                setIsBloodSugarTaskOpen(!isBloodSugarTaskOpen);
+                break;
+            default:
+                break;
+        }
+    };
+
+
     return (
 
         <main className="journal">
             <h1 className="journal__title">Track Your Progress </h1>
 
-            <div className="taskbox " onClick={handleMoodSelectorToggle}>
+            <div className="taskbox " onClick={() => handleTaskOpen('mood')}>
 
 
                 <div class="checkbox-container">
@@ -70,11 +106,17 @@ const Journal = () => {
                 </div>
             </div>
 
-            <div className="taskbox">
+            <div className="taskbox" onClick={() => handleTaskOpen('medicine')}>
 
                 <div class="checkbox-container">
                     <input type="checkbox" id="custom-checkbox"/>
                 </div>
+
+                {isMedicineTaskOpen && (
+                    <MedicineLog
+                        onClose={handleMedicineSelect}
+                    />
+                )}
 
                 <div className="task">
                     <img className="task__image" src={iconMed}></img>
