@@ -1,11 +1,13 @@
+@import '../../../styles//Utilities/globalUtils';
+
 
 .Subheader {
-    // position: fixed;
-    // width: 100%;
+
     &__title {
         display: flex;
         align-items: center;
         justify-content: center;
+     
         background-color: #024448ee;
         height: 11vh;
         color: #ffff;

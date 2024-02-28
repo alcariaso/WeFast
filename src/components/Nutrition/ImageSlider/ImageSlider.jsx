@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect} from 'react';
-import '../../Nutrition/ImageSlider/ImageSlider';
+import '../ImageSlider/ImageSlider.scss';
 import image1 from '../../../assets/foodImages/food-item-1.jpg';
 import image2 from '../../../assets/foodImages/food-item-2.jpg';
 import image3 from '../../../assets/foodImages/food-item-3.jpg';
