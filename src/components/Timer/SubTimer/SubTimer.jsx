@@ -97,6 +97,29 @@ const TimerMain = () => {
                 <button className="subbutton" onClick={handleStartStop}>{buttonLabel}</button>
                 <button className="subbutton" onClick={handleReset}>Reset</button>
             </div>
+
+            <div className="info">
+                <p className="info__text">
+                    Lower Blood Sugar in 1 week
+                </p>
+            </div>
+
+            <div className="info">
+                <h2 className="info__title">Fast to Lower Blood Sugar</h2>
+                <p className="info__text--2">
+                    Did You Know? Promotes blood sugar control by reducing insulin resistance
+                </p>
+            </div>
+
+            <div className="info">
+                <img className="info__img" src=""></img>
+                <h2 className="info__title">DURING FASTING</h2>
+                <ul className="info__list">
+                    <li className="list">Drink water or Herbal teat to stay Hydrated</li>
+                    <li className="list">Avoid High Intensity Workout</li>
+                    <li className="list"> Keep Your Mind off Food</li>
+                </ul>
+            </div>
         </div>
         <HomeHub></HomeHub>
         </main>
