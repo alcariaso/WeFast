@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect} from "react";
 import HomeHub from "../../HomeHub/HomeHub";
 import Header from '../../Header/Header';
+import iconRestart from '../../../assets/icons/icon-restart.png'
 
 const TimerMain = () => {
     const [hours, setHours] = useState(0);
@@ -95,7 +96,7 @@ const TimerMain = () => {
             </div>
             <div className="subcontrols">
                 <button className="subbutton" onClick={handleStartStop}>{buttonLabel}</button>
-                <button className="subbutton" onClick={handleReset}>Reset</button>
+                <button className="subbutton subbutton--side" onClick={handleReset}><img className="reset" src={iconRestart}></img></button>
             </div>
 
             <div className="info">

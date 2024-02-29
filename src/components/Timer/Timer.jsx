@@ -8,6 +8,7 @@ import iconChat from '../../assets/icons/icon-chat.png';
 import { Link } from "react-router-dom";
 
 
+
 const Timer = () => {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
@@ -104,6 +105,8 @@ const Timer = () => {
                 <button className="button" onClick={handleStartStop}>{buttonLabel}</button>
                 <button className="button" onClick={handleReset}>Reset</button>
             </div> */}
+
+           
 
             <div className="info">
               <p className="info__text">Get that Summer Body!</p>

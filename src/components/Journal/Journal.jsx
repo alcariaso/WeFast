@@ -10,6 +10,7 @@ import MoodSelector from '../Journal/MoodSelector/MoodSelector';
 import { Link } from "react-router-dom";
 import HomeHub from "../HomeHub/HomeHub";
 import MedicineLog from "./MedicineLog/MedicineLog";
+import WaterLog from '../Journal/WaterLog/WaterLog'
 
 
 const Journal = () => {
@@ -21,7 +22,7 @@ const Journal = () => {
     const [isActivityTaskOpen, setIsActivityTaskOpen] = useState(false);
     const [isBloodSugarTaskOpen, setIsBloodSugarTaskOpen] = useState(false);
     const [selectedMedicine, setSelectedMedicine] = useState(null);
-
+    const [selectedWater, setSelectedWater] = useState(null);
     const handleModalOpen = () => {
         setIsModalOpen(!isModalOpen);
       };
@@ -29,6 +30,11 @@ const Journal = () => {
       const handleMoodSelect = (mood) => {
         setSelectedMood(mood);
         setIsMoodSelectorOpen(false);
+      };
+
+      const handleWaterSelect = (water) => {
+        setSelectedWater(water);
+        setIsWaterTaskOpen(false);
       };
     
       const handleMoodSelectorToggle = () => {
@@ -93,16 +99,25 @@ const Journal = () => {
                 
             </div>
 
-            <div className="taskbox">
+            
+
+            <div className="taskbox" onClick={() => handleTaskOpen('water')}>
 
                 <div class="checkbox-container">
                     <input type="checkbox" id="custom-checkbox"/>
                 </div>
+                {isWaterTaskOpen && (
+                        <WaterLog
+                            onSelect={handleWaterSelect}
+                            onClose={handleMoodSelectorToggle}
+                        />
+                    )}
 
                 <div className="task">
                     <img className="task__image" src={iconWater}></img>
                     <div className="task__container"><h2 className="title">WATER</h2>
-                    <p className="text"></p></div>
+                    <p className="text">Taken: {selectedWater || 'None'}</p>
+                    </div>
                 </div>
             </div>
 
