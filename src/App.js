@@ -8,7 +8,7 @@ import NutritionFood from '../src/components/Nutrition/NutritionFood/NutritionFo
 import Community from '../src/components/Community/Community';
 import Timer from '../src/components/Timer/Timer';
 import SubTimer from '../src/components/Timer/SubTimer/SubTimer'
-import MedicineLog from './components/Journal/MedicineLog/MedicineLog';
+import Login from './components/Login/Login';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-
+          {/* <Login></Login> */}
           <Routes>
               <Route path='/' element={<SubTimer/>}></Route>
               <Route path='/Subtimer' element={<Timer/>}></Route>
@@ -29,7 +29,7 @@ function App() {
    
       </BrowserRouter>
     
-      {/* <HomeHub></HomeHub> */}
+
       
     </div>
   );

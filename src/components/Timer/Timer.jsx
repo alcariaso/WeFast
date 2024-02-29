@@ -106,8 +106,7 @@ const Timer = () => {
                 <button className="button" onClick={handleReset}>Reset</button>
             </div> */}
 
-           
-
+          
             <div className="info">
               <p className="info__text">Get that Summer Body!</p>
             </div>
