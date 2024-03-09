@@ -1,5 +1,5 @@
 import React from "react";
-import '../TimerMain/TimerMain.scss';
+import './TimerMain.scss';
 
 import { useState, useEffect} from "react";
 

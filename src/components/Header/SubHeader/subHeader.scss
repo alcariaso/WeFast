@@ -1,3 +1,5 @@
+@import '../../../styles//Utilities/globalUtils';
+
 
 .Subheader {
 
@@ -5,6 +7,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+     
         background-color: #024448ee;
         height: 11vh;
         color: #ffff;
@@ -13,6 +16,6 @@
         font-weight: 700;
         text-shadow: 4px 3px 6px #111010;
         margin: 0%;
-        background-image: linear-gradient(to bottom, #12864e, #012527ee);
+        background-image: linear-gradient(to bottom, #0e6b3e, #012527ee);
     }
 }

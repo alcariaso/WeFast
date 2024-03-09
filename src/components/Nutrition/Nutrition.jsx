@@ -2,12 +2,13 @@ import React from "react";
 import '../Nutrition/Nutrition.scss';
 import HomeHub from "../HomeHub/HomeHub";
 import { Link } from "react-router-dom";
+import lazyLoadImage from "react-lazy-load-image-component"
 
 const Nutrition = () => {
 
     return (
      <main className="nutrition">
-
+        
         <div className="nutrition__background"></div>
 
         <h1 className="nutrition__title">Let's Keep it Healthy!</h1>

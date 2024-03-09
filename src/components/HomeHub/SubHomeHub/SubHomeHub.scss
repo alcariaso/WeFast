@@ -1,8 +1,8 @@
 
-@import '../../styles/Partials/mixin';
-@import '../../styles/Partials/variables';
-@import '../../styles/Partials/global';
-@import '../../styles/Utilities/fontUtils';
+@import '../../../styles/Partials/mixin';
+@import '../../../styles/Partials/variables';
+@import '../../../styles/Partials/global';
+@import '../../../styles/Utilities/fontUtils';
 
 .SubhomeNav {
     position: fixed;
@@ -10,7 +10,7 @@
     height: 9vh;
     bottom: 0;
 
-    background-image: linear-gradient(to top, #2bc67b, #043436ee);
+    background-image: linear-gradient(to top,  #0e6b3e, #043436ee);
     box-shadow: 3px 0px 10px black;
     border-radius: 10px;
     z-index: 0;
@@ -31,9 +31,6 @@
         }
 
     }
-
-  
-
    
 
 }

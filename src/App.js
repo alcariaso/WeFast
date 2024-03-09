@@ -4,11 +4,11 @@ import './App.css';
 import HomeHub from './components/HomeHub/HomeHub';
 import Journal from '../src/components/Journal/Journal';
 import Nutrition from '../src/components/Nutrition/Nutrition';
-import NutritionFood from '../src/components/NutritionFood/NutritionFood';
+import NutritionFood from '../src/components/Nutrition/NutritionFood/NutritionFood';
 import Community from '../src/components/Community/Community';
 import Timer from '../src/components/Timer/Timer';
-import SubTimer from '../src/components/SubTimer/SubTimer'
-
+import SubTimer from '../src/components/Timer/SubTimer/SubTimer'
+import Login from './components/Login/Login';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-
+          {/* <Login></Login> */}
           <Routes>
               <Route path='/' element={<SubTimer/>}></Route>
               <Route path='/Subtimer' element={<Timer/>}></Route>
@@ -25,9 +25,11 @@ function App() {
               <Route path='/NutritionFood' element={<NutritionFood/>}></Route>
               <Route path='/Community' element={<Community/>}></Route>
           </Routes>
+
+   
       </BrowserRouter>
     
-      {/* <HomeHub></HomeHub> */}
+
       
     </div>
   );

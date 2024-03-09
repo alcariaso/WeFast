@@ -2,8 +2,8 @@ import React from "react";
 import '../NutritionFood/NutritionFood.scss'
 import Heart from "@react-sandbox/heart";
 import { useState } from "react";
-import Recipe from '../Recipe/Recipe';
-import iconBackArrow from '../../assets/icons/icon-backArrow.png'
+import Recipe from './Recipe/Recipe';
+import iconBackArrow from '../../../assets/icons/icon-backArrow.png'
 import ImageSlider from '../ImageSlider/ImageSlider';
 import { Link } from "react-router-dom";
 
